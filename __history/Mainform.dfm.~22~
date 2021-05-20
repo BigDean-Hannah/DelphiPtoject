@@ -2,8 +2,8 @@ object Form3: TForm3
   Left = 0
   Top = 0
   Caption = 'First Project With Delphi'
-  ClientHeight = 499
-  ClientWidth = 642
+  ClientHeight = 593
+  ClientWidth = 720
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,11 +11,12 @@ object Form3: TForm3
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 24
-    Top = 16
+    Left = 288
+    Top = 8
     Width = 166
     Height = 20
     Caption = 'Welcom to my project'
@@ -28,7 +29,7 @@ object Form3: TForm3
   end
   object lbl2: TLabel
     Left = 256
-    Top = 184
+    Top = 169
     Width = 82
     Height = 20
     Caption = 'your gender'
@@ -40,8 +41,8 @@ object Form3: TForm3
     ParentFont = False
   end
   object lbl3: TLabel
-    Left = 384
-    Top = 184
+    Left = 498
+    Top = 169
     Width = 78
     Height = 40
     Caption = 'your degree'#13#10
@@ -54,10 +55,10 @@ object Form3: TForm3
     OnMouseLeave = lbl3MouseLeave
   end
   object lbl4: TLabel
-    Left = 24
-    Top = 280
+    Left = 8
+    Top = 296
     Width = 223
-    Height = 20
+    Height = 48
     Caption = 'Your personal information :'#13#10
     Font.Charset = ANSI_CHARSET
     Font.Color = clMaroon
@@ -80,7 +81,7 @@ object Form3: TForm3
   end
   object lbl6: TLabel
     Left = 8
-    Top = 336
+    Top = 409
     Width = 44
     Height = 20
     Caption = 'Name'
@@ -93,7 +94,7 @@ object Form3: TForm3
   end
   object lbl7: TLabel
     Left = 8
-    Top = 366
+    Top = 435
     Width = 79
     Height = 20
     Caption = 'LastName'
@@ -104,17 +105,42 @@ object Form3: TForm3
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
   end
+  object lbl8: TLabel
+    Left = 8
+    Top = 408
+    Width = 5
+    Height = 20
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clPurple
+    Font.Height = -16
+    Font.Name = 'Bradley Hand ITC'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object lblNew: TLabel
+    Left = 168
+    Top = 520
+    Width = 133
+    Height = 20
+    Caption = 'I'#39'm fine'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clFuchsia
+    Font.Height = -16
+    Font.Name = 'Bradley Hand ITC'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
   object lst1: TListBox
-    Left = 40
-    Top = 48
+    Left = 8
+    Top = 88
     Width = 153
     Height = 161
     ItemHeight = 13
     TabOrder = 0
   end
   object btn1: TButton
-    Left = 56
-    Top = 215
+    Left = 8
+    Top = 255
     Width = 121
     Height = 25
     Caption = 'Fill in the box above'
@@ -148,7 +174,7 @@ object Form3: TForm3
     end
   end
   object grp2: TGroupBox
-    Left = 384
+    Left = 472
     Top = 48
     Width = 121
     Height = 105
@@ -164,7 +190,7 @@ object Form3: TForm3
       OnClick = chk1Click
     end
     object chk2: TCheckBox
-      Left = 8
+      Left = 7
       Top = 40
       Width = 97
       Height = 17
@@ -184,20 +210,20 @@ object Form3: TForm3
   end
   object edt1: TEdit
     Left = 117
-    Top = 336
+    Top = 409
     Width = 73
     Height = 21
     TabOrder = 4
   end
   object edt2: TEdit
     Left = 117
-    Top = 363
+    Top = 436
     Width = 73
     Height = 21
     TabOrder = 5
   end
   object tv1: TTreeView
-    Left = 344
+    Left = 432
     Top = 296
     Width = 185
     Height = 145
@@ -205,12 +231,39 @@ object Form3: TForm3
     TabOrder = 6
   end
   object btn2: TButton
-    Left = 414
-    Top = 466
+    Left = 494
+    Top = 447
     Width = 75
     Height = 25
     Caption = 'btn2'
     TabOrder = 7
     OnClick = btn2Click
+  end
+  object btn3: TButton
+    Left = 248
+    Top = 417
+    Width = 161
+    Height = 25
+    Caption = 'fill editfelds and click me plz'
+    TabOrder = 8
+    OnClick = btn3Click
+  end
+  object btn4: TButton
+    Left = 8
+    Top = 40
+    Width = 233
+    Height = 25
+    Caption = 'select a item from combobox and click hear'
+    TabOrder = 9
+    OnClick = btn4Click
+  end
+  object btn5: TButton
+    Left = 32
+    Top = 520
+    Width = 75
+    Height = 25
+    Caption = 'Crazy'
+    TabOrder = 10
+    OnClick = btn5Click
   end
 end

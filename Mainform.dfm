@@ -120,7 +120,7 @@ object Form3: TForm3
   object lblNew: TLabel
     Left = 168
     Top = 520
-    Width = 133
+    Width = 60
     Height = 20
     Caption = 'I'#39'm fine'
     Font.Charset = ANSI_CHARSET
@@ -265,5 +265,12 @@ object Form3: TForm3
     Caption = 'Crazy'
     TabOrder = 10
     OnClick = btn5Click
+  end
+  object edtnew: TEdit
+    Left = 304
+    Top = 528
+    Width = 121
+    Height = 21
+    TabOrder = 11
   end
 end

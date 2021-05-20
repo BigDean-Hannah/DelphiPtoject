@@ -33,7 +33,6 @@ type
     btn4: TButton;
     btn5: TButton;
     lblNew: TLabel;
-    edtnew: TEdit;
     procedure btn1Click(Sender: TObject);
     procedure FillList;
     procedure rb1Click(Sender: TObject);
@@ -108,7 +107,6 @@ end;
 procedure TForm3.btn5Click(Sender: TObject);
 begin
   lblNew.Caption := 'I am glad for you!!!!!!!!';
-  edtnew.Text := lblNew.Caption;
 end;
 
 procedure TForm3.chk1Click(Sender: TObject);
