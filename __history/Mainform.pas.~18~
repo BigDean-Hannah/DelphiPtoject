@@ -31,8 +31,6 @@ type
     lbl8: TLabel;
     btn3: TButton;
     btn4: TButton;
-    btn5: TButton;
-    lblNew: TLabel;
     procedure btn1Click(Sender: TObject);
     procedure FillList;
     procedure rb1Click(Sender: TObject);
@@ -45,7 +43,6 @@ type
     procedure btn3Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btn4Click(Sender: TObject);
-    procedure btn5Click(Sender: TObject);
   private
     comb: TComboBox;
   public
@@ -102,11 +99,6 @@ end;
 procedure TForm3.btn4Click(Sender: TObject);
 begin
   MessageDlg('Selected text: ' + comb.Text, mtInformation, mbYesNo, 0);
-end;
-
-procedure TForm3.btn5Click(Sender: TObject);
-begin
-  lblNew.Caption := 'I am glad for you!!!!!!!!';
 end;
 
 procedure TForm3.chk1Click(Sender: TObject);

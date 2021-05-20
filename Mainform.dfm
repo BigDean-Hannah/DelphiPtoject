@@ -2,8 +2,8 @@ object Form3: TForm3
   Left = 0
   Top = 0
   Caption = 'First Project With Delphi'
-  ClientHeight = 499
-  ClientWidth = 642
+  ClientHeight = 593
+  ClientWidth = 720
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -112,6 +112,19 @@ object Form3: TForm3
     Height = 20
     Font.Charset = ANSI_CHARSET
     Font.Color = clPurple
+    Font.Height = -16
+    Font.Name = 'Bradley Hand ITC'
+    Font.Style = [fsBold, fsItalic]
+    ParentFont = False
+  end
+  object lblNew: TLabel
+    Left = 168
+    Top = 520
+    Width = 133
+    Height = 20
+    Caption = 'I'#39'm fine'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clFuchsia
     Font.Height = -16
     Font.Name = 'Bradley Hand ITC'
     Font.Style = [fsBold, fsItalic]
@@ -243,5 +256,14 @@ object Form3: TForm3
     Caption = 'select a item from combobox and click hear'
     TabOrder = 9
     OnClick = btn4Click
+  end
+  object btn5: TButton
+    Left = 32
+    Top = 520
+    Width = 75
+    Height = 25
+    Caption = 'Crazy'
+    TabOrder = 10
+    OnClick = btn5Click
   end
 end
