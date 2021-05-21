@@ -12,6 +12,7 @@ type
     lst1: TListBox;
     btn1: TButton;
     grp1: TGroupBox;
+    rb1: TRadioButton;
     rb2: TRadioButton;
     lbl2: TLabel;
     grp2: TGroupBox;
@@ -36,8 +37,6 @@ type
     grpTreeview: TGroupBox;
     grpGreeting: TGroupBox;
     grpPersionalInfo: TGroupBox;
-    rb1: TRadioButton;
-    grpListbox: TGroupBox;
     procedure btn1Click(Sender: TObject);
     procedure FillList;
     procedure rb1Click(Sender: TObject);

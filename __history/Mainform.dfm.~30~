@@ -80,7 +80,7 @@ object Form3: TForm3
     ParentFont = False
   end
   object lbl8: TLabel
-    Left = 573
+    Left = 685
     Top = 82
     Width = 37
     Height = 20
@@ -223,7 +223,7 @@ object Form3: TForm3
     end
   end
   object grpPersionalInfo: TGroupBox
-    Left = 340
+    Left = 460
     Top = 41
     Width = 190
     Height = 105
