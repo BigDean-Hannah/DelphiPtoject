@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls, Vcl.ExtCtrls;
 
 type
   TForm3 = class(TForm)
@@ -38,6 +38,11 @@ type
     grpPersionalInfo: TGroupBox;
     rb1: TRadioButton;
     grpListbox: TGroupBox;
+    grpTimer: TGroupBox;
+    tmr1: TTimer;
+    btnStart: TButton;
+    btnStop: TButton;
+    lblTime: TLabel;
     procedure btn1Click(Sender: TObject);
     procedure FillList;
     procedure rb1Click(Sender: TObject);
@@ -51,6 +56,8 @@ type
     procedure FormCreate(Sender: TObject);
     procedure btn4Click(Sender: TObject);
     procedure btn5Click(Sender: TObject);
+    procedure btnStartClick(Sender: TObject);
+    procedure btnStopClick(Sender: TObject);
   private
     comb: TComboBox;
   public
@@ -113,6 +120,21 @@ procedure TForm3.btn5Click(Sender: TObject);
 begin
   lblNew.Caption := 'I am glad for you!!!!!!!!';
   edtnew.Text := lblNew.Caption;
+end;
+
+procedure TForm3.btnStartClick(Sender: TObject);
+begin
+  tmr1.Enabled := True;
+  lblTime.Caption := 'Start';
+end;
+
+procedure TForm3.btnStopClick(Sender: TObject);
+begin
+  if tmr1.Enabled then
+  begin
+    tmr1.Enabled := False;
+    lblTime.Caption := 'Start';
+  end;
 end;
 
 procedure TForm3.chk1Click(Sender: TObject);

@@ -44,7 +44,7 @@ object Form3: TForm3
     Left = 153
     Top = 126
     Width = 78
-    Height = 20
+    Height = 40
     Caption = 'your degree'#13#10
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -58,7 +58,7 @@ object Form3: TForm3
     Left = 151
     Top = 188
     Width = 223
-    Height = 30
+    Height = 48
     Caption = 'Your personal information :'#13#10
     Font.Charset = ANSI_CHARSET
     Font.Color = clMaroon
@@ -70,7 +70,7 @@ object Form3: TForm3
   object lbl5: TLabel
     Left = 391
     Top = 190
-    Width = 37
+    Width = 5
     Height = 20
     Font.Charset = ANSI_CHARSET
     Font.Color = clGreen
@@ -82,7 +82,7 @@ object Form3: TForm3
   object lbl8: TLabel
     Left = 573
     Top = 82
-    Width = 37
+    Width = 5
     Height = 20
     Font.Charset = ANSI_CHARSET
     Font.Color = clPurple
@@ -280,8 +280,8 @@ object Form3: TForm3
     end
   end
   object grpListbox: TGroupBox
-    Left = 613
-    Top = 212
+    Left = 493
+    Top = 215
     Width = 193
     Height = 222
     Caption = 'grpListbox'
@@ -303,5 +303,48 @@ object Form3: TForm3
       TabOrder = 1
       OnClick = btn1Click
     end
+  end
+  object grpTimer: TGroupBox
+    Left = 698
+    Top = 291
+    Width = 209
+    Height = 105
+    Caption = 'grpTimer'
+    TabOrder = 7
+    object lblTime: TLabel
+      Left = 40
+      Top = 16
+      Width = 113
+      Height = 24
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clLime
+      Font.Height = -19
+      Font.Name = 'Bradley Hand ITC'
+      Font.Style = [fsBold, fsItalic]
+      ParentFont = False
+    end
+    object btnStart: TButton
+      Left = 24
+      Top = 72
+      Width = 75
+      Height = 25
+      Caption = 'Start'
+      TabOrder = 0
+      OnClick = btnStartClick
+    end
+    object btnStop: TButton
+      Left = 120
+      Top = 72
+      Width = 75
+      Height = 25
+      Caption = 'Stop'
+      TabOrder = 1
+      OnClick = btnStopClick
+    end
+  end
+  object tmr1: TTimer
+    Enabled = False
+    Left = 856
+    Top = 240
   end
 end
