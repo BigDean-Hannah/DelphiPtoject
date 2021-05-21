@@ -2,8 +2,8 @@ object Form3: TForm3
   Left = 0
   Top = 0
   Caption = 'First Project With Delphi'
-  ClientHeight = 499
-  ClientWidth = 642
+  ClientHeight = 593
+  ClientWidth = 825
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,8 +15,8 @@ object Form3: TForm3
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 24
-    Top = 16
+    Left = 288
+    Top = 8
     Width = 166
     Height = 20
     Caption = 'Welcom to my project'
@@ -55,8 +55,8 @@ object Form3: TForm3
     OnMouseLeave = lbl3MouseLeave
   end
   object lbl4: TLabel
-    Left = 24
-    Top = 265
+    Left = 8
+    Top = 296
     Width = 223
     Height = 48
     Caption = 'Your personal information :'#13#10
@@ -118,16 +118,16 @@ object Form3: TForm3
     ParentFont = False
   end
   object lst1: TListBox
-    Left = 40
-    Top = 48
+    Left = 8
+    Top = 88
     Width = 153
     Height = 161
     ItemHeight = 13
     TabOrder = 0
   end
   object btn1: TButton
-    Left = 56
-    Top = 215
+    Left = 8
+    Top = 255
     Width = 121
     Height = 25
     Caption = 'Fill in the box above'
@@ -209,30 +209,84 @@ object Form3: TForm3
     Height = 21
     TabOrder = 5
   end
-  object tv1: TTreeView
-    Left = 432
-    Top = 296
-    Width = 185
-    Height = 145
-    Indent = 19
-    TabOrder = 6
-  end
-  object btn2: TButton
-    Left = 494
-    Top = 447
-    Width = 75
-    Height = 25
-    Caption = 'btn2'
-    TabOrder = 7
-    OnClick = btn2Click
-  end
   object btn3: TButton
-    Left = 248
-    Top = 417
+    Left = 8
+    Top = 463
     Width = 161
     Height = 25
     Caption = 'fill editfelds and click me plz'
-    TabOrder = 8
+    TabOrder = 6
     OnClick = btn3Click
+  end
+  object btn4: TButton
+    Left = 8
+    Top = 40
+    Width = 233
+    Height = 25
+    Caption = 'select a item from combobox and click hear'
+    TabOrder = 7
+    OnClick = btn4Click
+  end
+  object grpTreeview: TGroupBox
+    Left = 336
+    Top = 341
+    Width = 198
+    Height = 204
+    Caption = 'Create Treeview'
+    TabOrder = 8
+    object tv1: TTreeView
+      Left = 3
+      Top = 21
+      Width = 185
+      Height = 145
+      Indent = 19
+      TabOrder = 0
+    end
+    object btn2: TButton
+      Left = 14
+      Top = 172
+      Width = 75
+      Height = 25
+      Caption = 'btn2'
+      TabOrder = 1
+      OnClick = btn2Click
+    end
+  end
+  object grpGreeting: TGroupBox
+    Left = 568
+    Top = 255
+    Width = 145
+    Height = 130
+    Caption = 'Greeting'
+    TabOrder = 9
+    object lblNew: TLabel
+      Left = 33
+      Top = 22
+      Width = 60
+      Height = 20
+      Caption = 'I'#39'm fine'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clFuchsia
+      Font.Height = -16
+      Font.Name = 'Bradley Hand ITC'
+      Font.Style = [fsBold, fsItalic]
+      ParentFont = False
+    end
+    object btn5: TButton
+      Left = 32
+      Top = 48
+      Width = 75
+      Height = 25
+      Caption = 'Crazy'
+      TabOrder = 0
+      OnClick = btn5Click
+    end
+    object edtnew: TEdit
+      Left = 16
+      Top = 79
+      Width = 121
+      Height = 21
+      TabOrder = 1
+    end
   end
 end

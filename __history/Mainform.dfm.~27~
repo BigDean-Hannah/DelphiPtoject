@@ -2,8 +2,8 @@ object Form3: TForm3
   Left = 0
   Top = 0
   Caption = 'First Project With Delphi'
-  ClientHeight = 445
-  ClientWidth = 915
+  ClientHeight = 466
+  ClientWidth = 878
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -55,8 +55,8 @@ object Form3: TForm3
     OnMouseLeave = lbl3MouseLeave
   end
   object lbl4: TLabel
-    Left = 151
-    Top = 188
+    Left = 468
+    Top = 88
     Width = 223
     Height = 30
     Caption = 'Your personal information :'#13#10
@@ -68,8 +68,8 @@ object Form3: TForm3
     ParentFont = False
   end
   object lbl5: TLabel
-    Left = 391
-    Top = 190
+    Left = 703
+    Top = 90
     Width = 37
     Height = 20
     Font.Charset = ANSI_CHARSET
@@ -80,9 +80,9 @@ object Form3: TForm3
     ParentFont = False
   end
   object lbl8: TLabel
-    Left = 573
-    Top = 82
-    Width = 37
+    Left = 812
+    Top = 408
+    Width = 5
     Height = 20
     Font.Charset = ANSI_CHARSET
     Font.Color = clPurple
@@ -95,12 +95,12 @@ object Form3: TForm3
     Left = 8
     Top = 206
     Width = 137
-    Height = 75
+    Height = 97
     Caption = 'your gender'
     TabOrder = 0
     object rb2: TRadioButton
-      Left = 3
-      Top = 47
+      Left = 21
+      Top = 64
       Width = 113
       Height = 17
       Caption = 'woman'
@@ -108,7 +108,7 @@ object Form3: TForm3
       OnClick = rb2Click
     end
     object rb1: TRadioButton
-      Left = 3
+      Left = 16
       Top = 24
       Width = 57
       Height = 17
@@ -142,7 +142,7 @@ object Form3: TForm3
       OnClick = chk2Click
     end
     object chk3: TCheckBox
-      Left = 16
+      Left = 36
       Top = 63
       Width = 76
       Height = 17
@@ -187,7 +187,7 @@ object Form3: TForm3
   end
   object grpGreeting: TGroupBox
     Left = 8
-    Top = 287
+    Top = 323
     Width = 145
     Height = 130
     Caption = 'Greeting'
@@ -223,8 +223,8 @@ object Form3: TForm3
     end
   end
   object grpPersionalInfo: TGroupBox
-    Left = 340
-    Top = 41
+    Left = 266
+    Top = 57
     Width = 190
     Height = 105
     Caption = 'PersionalInfo'

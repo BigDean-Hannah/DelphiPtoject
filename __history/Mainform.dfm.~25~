@@ -2,8 +2,8 @@ object Form3: TForm3
   Left = 0
   Top = 0
   Caption = 'First Project With Delphi'
-  ClientHeight = 499
-  ClientWidth = 642
+  ClientHeight = 593
+  ClientWidth = 825
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,11 +11,12 @@ object Form3: TForm3
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object lbl1: TLabel
-    Left = 24
-    Top = 16
+    Left = 288
+    Top = 8
     Width = 166
     Height = 20
     Caption = 'Welcom to my project'
@@ -43,7 +44,7 @@ object Form3: TForm3
     Left = 498
     Top = 169
     Width = 78
-    Height = 40
+    Height = 20
     Caption = 'your degree'#13#10
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -54,10 +55,10 @@ object Form3: TForm3
     OnMouseLeave = lbl3MouseLeave
   end
   object lbl4: TLabel
-    Left = 24
-    Top = 280
+    Left = 8
+    Top = 296
     Width = 223
-    Height = 20
+    Height = 48
     Caption = 'Your personal information :'#13#10
     Font.Charset = ANSI_CHARSET
     Font.Color = clMaroon
@@ -78,32 +79,6 @@ object Form3: TForm3
     Font.Style = [fsBold, fsItalic]
     ParentFont = False
   end
-  object lbl6: TLabel
-    Left = 8
-    Top = 336
-    Width = 44
-    Height = 20
-    Caption = 'Name'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clRed
-    Font.Height = -16
-    Font.Name = 'Bradley Hand ITC'
-    Font.Style = [fsBold, fsItalic]
-    ParentFont = False
-  end
-  object lbl7: TLabel
-    Left = 8
-    Top = 366
-    Width = 79
-    Height = 20
-    Caption = 'LastName'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clRed
-    Font.Height = -16
-    Font.Name = 'Bradley Hand ITC'
-    Font.Style = [fsBold, fsItalic]
-    ParentFont = False
-  end
   object lbl8: TLabel
     Left = 8
     Top = 408
@@ -117,16 +92,16 @@ object Form3: TForm3
     ParentFont = False
   end
   object lst1: TListBox
-    Left = 40
-    Top = 48
+    Left = 8
+    Top = 88
     Width = 153
     Height = 161
     ItemHeight = 13
     TabOrder = 0
   end
   object btn1: TButton
-    Left = 56
-    Top = 215
+    Left = 8
+    Top = 255
     Width = 121
     Height = 25
     Caption = 'Fill in the box above'
@@ -194,44 +169,132 @@ object Form3: TForm3
       OnClick = chk3Click
     end
   end
-  object edt1: TEdit
-    Left = 117
-    Top = 336
-    Width = 73
-    Height = 21
+  object btn4: TButton
+    Left = 8
+    Top = 40
+    Width = 233
+    Height = 25
+    Caption = 'select a item from combobox and click hear'
     TabOrder = 4
+    OnClick = btn4Click
   end
-  object edt2: TEdit
-    Left = 117
-    Top = 363
-    Width = 73
-    Height = 21
+  object grpTreeview: TGroupBox
+    Left = 256
+    Top = 334
+    Width = 198
+    Height = 204
+    Caption = 'Create Treeview'
     TabOrder = 5
+    object tv1: TTreeView
+      Left = 3
+      Top = 21
+      Width = 185
+      Height = 145
+      Indent = 19
+      TabOrder = 0
+    end
+    object btn2: TButton
+      Left = 14
+      Top = 172
+      Width = 75
+      Height = 25
+      Caption = 'btn2'
+      TabOrder = 1
+      OnClick = btn2Click
+    end
   end
-  object tv1: TTreeView
-    Left = 432
-    Top = 296
-    Width = 185
-    Height = 145
-    Indent = 19
+  object grpGreeting: TGroupBox
+    Left = 460
+    Top = 215
+    Width = 145
+    Height = 130
+    Caption = 'Greeting'
     TabOrder = 6
+    object lblNew: TLabel
+      Left = 33
+      Top = 22
+      Width = 60
+      Height = 20
+      Caption = 'I'#39'm fine'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clFuchsia
+      Font.Height = -16
+      Font.Name = 'Bradley Hand ITC'
+      Font.Style = [fsBold, fsItalic]
+      ParentFont = False
+    end
+    object edtnew: TEdit
+      Left = 16
+      Top = 79
+      Width = 121
+      Height = 21
+      TabOrder = 0
+    end
+    object btn5: TButton
+      Left = 32
+      Top = 48
+      Width = 75
+      Height = 25
+      Caption = 'Crazy'
+      TabOrder = 1
+      OnClick = btn5Click
+    end
   end
-  object btn2: TButton
-    Left = 494
-    Top = 447
-    Width = 75
-    Height = 25
-    Caption = 'btn2'
+  object grpPersionalInfo: TGroupBox
+    Left = 19
+    Top = 362
+    Width = 190
+    Height = 127
+    Caption = 'PersionalInfo'
     TabOrder = 7
-    OnClick = btn2Click
-  end
-  object btn3: TButton
-    Left = 248
-    Top = 344
-    Width = 75
-    Height = 25
-    Caption = 'click me plz'
-    TabOrder = 8
-    OnClick = btn3Click
+    object lbl6: TLabel
+      Left = 11
+      Top = 21
+      Width = 44
+      Height = 20
+      Caption = 'Name'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clRed
+      Font.Height = -16
+      Font.Name = 'Bradley Hand ITC'
+      Font.Style = [fsBold, fsItalic]
+      ParentFont = False
+    end
+    object lbl7: TLabel
+      Left = 3
+      Top = 59
+      Width = 79
+      Height = 20
+      Caption = 'LastName'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clRed
+      Font.Height = -16
+      Font.Name = 'Bradley Hand ITC'
+      Font.Style = [fsBold, fsItalic]
+      ParentFont = False
+    end
+    object edt1: TEdit
+      Left = 96
+      Top = 20
+      Width = 73
+      Height = 21
+      TabOrder = 0
+    end
+    object edt2: TEdit
+      Left = 96
+      Top = 57
+      Width = 73
+      Height = 21
+      TabOrder = 1
+    end
+    object btn3: TButton
+      Left = 11
+      Top = 85
+      Width = 161
+      Height = 25
+      Caption = 'fill editfelds and click me plz'
+      TabOrder = 2
+      OnClick = btn3Click
+    end
   end
 end

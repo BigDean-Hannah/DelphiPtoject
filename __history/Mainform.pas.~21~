@@ -28,6 +28,14 @@ type
     edt2: TEdit;
     tv1: TTreeView;
     btn2: TButton;
+    lbl8: TLabel;
+    btn3: TButton;
+    btn4: TButton;
+    btn5: TButton;
+    lblNew: TLabel;
+    edtnew: TEdit;
+    grpTreeview: TGroupBox;
+    grpGreeting: TGroupBox;
     procedure btn1Click(Sender: TObject);
     procedure FillList;
     procedure rb1Click(Sender: TObject);
@@ -37,8 +45,12 @@ type
     procedure chk3Click(Sender: TObject);
     procedure lbl3MouseLeave(Sender: TObject);
     procedure btn2Click(Sender: TObject);
+    procedure btn3Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure btn4Click(Sender: TObject);
+    procedure btn5Click(Sender: TObject);
   private
-    { Private-Deklarationen }
+    comb: TComboBox;
   public
     { Public-Deklarationen }
   end;
@@ -85,6 +97,22 @@ begin
 
 end;
 
+procedure TForm3.btn3Click(Sender: TObject);
+begin
+  lbl8.Caption := 'Thanke you for visit my Project ' + edt1.Text + ' ' + edt2.Text;
+end;
+
+procedure TForm3.btn4Click(Sender: TObject);
+begin
+  MessageDlg('Selected text: ' + comb.Text, mtInformation, mbYesNo, 0);
+end;
+
+procedure TForm3.btn5Click(Sender: TObject);
+begin
+  lblNew.Caption := 'I am glad for you!!!!!!!!';
+  edtnew.Text := lblNew.Caption;
+end;
+
 procedure TForm3.chk1Click(Sender: TObject);
 begin
   lbl3.Caption := chk1.Caption;
@@ -106,6 +134,26 @@ var
 begin
   InputString:= InputBox('Input Box', 'Prompt', 'Default string');
   lst1.Items.Add(InputString);
+end;
+
+procedure TForm3.FormCreate(Sender: TObject);
+begin
+  //Initialize the combo box.
+  comb := TComboBox.Create(Self);
+  comb.Parent := Self;
+
+  //Visual options
+  comb.Align := alLeft;
+  comb.DoubleBuffered := true;
+  comb.AutoComplete := true;
+
+  //Adding items to the combo box
+  comb.AddItem('firstChoice', nil);
+  comb.AddItem('secondChoice', nil);
+  comb.AddItem('thirdChoice', nil);
+
+  //Setting the default value
+  comb.ItemIndex := 1;
 end;
 
 procedure TForm3.lbl3MouseLeave(Sender: TObject);
